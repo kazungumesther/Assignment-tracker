@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body{
+  font-family: Arial, sans-serif;
+  background-color: rgb(232, 237, 239);
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color:#121212
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  padding: 10px;
+  margin: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button{
+  padding: 10px;
+  background-color: green;
+  color: antiquewhite;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+  background-color: antiquewhite;
+}
+.assignment-card{
+  background: white;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 02px 5px rgba(0,0,0,0.1);
+}
+.delete-btn{
+  background-color: rgb(195, 25, 25);
   color: white;
+  border: none;
+  padding: 10px, 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.done-btn{
+background-color: green;
+border: none;
+padding: 10px, 15px;
+border-radius: 5px;
+cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Overdue{
+  color:red;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.OnTime{
+  color: green;
+  font-weight: bold;
+}
+.completed{
+  color: green;
+  font-weight: bold;
+}
+.pending{
+  color: orange;
+  font-weight: bold;
 }
