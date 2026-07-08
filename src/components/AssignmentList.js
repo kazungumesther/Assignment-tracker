@@ -29,7 +29,7 @@ function AssignmentList({assignments,deleteAssignment, completeAssignment}){
    </p>
 
   <p className={deadlineStatus === "Overdue"? "Overdue":"OnTime"}>
-    {deadlineStatus === "Overdue" ?   "Overdue" : "On Time"}</p>
+    {deadlineStatus === "Overdue" ?   "Overdue!" : "On Time"}</p>
 
    
 
