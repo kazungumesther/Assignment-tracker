@@ -21,15 +21,15 @@ function AssignmentList({assignments,deleteAssignment, completeAssignment}){
         return(
      <div key = {index} className="assignment-card"> 
      <h3>{assignment.title}</h3> 
-     <p>📚 Course: {assignment.course}</p>
+     <p>Course: {assignment.course}</p>
      <p>Start Date:{assignment.startDate}</p> 
      <p> Due Date: {assignment.dueDate}</p>
      <p className={assignment.completed ? "completed" : "pending"}>
-     {assignment.completed ? "✅ Completed" : "⏳ Pending"}
+     {assignment.completed ? "Completed" : "Pending"}
    </p>
 
   <p className={deadlineStatus === "Overdue"? "Overdue":"OnTime"}>
-    {deadlineStatus === "Overdue" ?  "⚠️ Overdue" : " 🟢 On Time"}</p>
+    {deadlineStatus === "Overdue" ?   "Overdue" : "On Time"}</p>
 
    
 
